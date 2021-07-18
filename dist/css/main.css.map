@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../main.scss",
+        "../../_resets.scss",
+        "../../_colors.scss",
+        "../../_fontMixins.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
