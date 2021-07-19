@@ -1,0 +1,23 @@
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+$viewPort: (
+  'mobile': 375px,
+  'desktop': 1440px,
+);
+// FONT WEIGHT MAP-GET FUNCTION
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+// VIEWPORT MAP-GET FUNCTION
+@function viewport($device) {
+  @return map-get($viewPort, $device);
+}
+// CENTERING
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
