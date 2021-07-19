@@ -10,4 +10,10 @@
 body {
   background-color: grey;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
 /*# sourceMappingURL=main.css.map */

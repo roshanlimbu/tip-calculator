@@ -26,16 +26,62 @@
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
+
   <body>
     <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
     person Total / person Reset
      -->
+    <h2 class="body__header">SPLI <span>TTER</span></h2>
+    <div class="main__container">
+      <section class="left">
+        <div class="top__section">
+          <label for="bill">Bill</label><br />
+          <input id="bill" type="Number" placeholder="0" />
+        </div>
 
+        <div class="middle__section">
+          <label for="tip">Select Tip %</label><br />
+          <button class="tip-btn">5%</button>
+          <button class="tip-btn">10%</button>
+          <button class="tip-btn">15%</button>
+          <button class="tip-btn">25%</button>
+          <button class="tip-btn">50%</button>
+          <input type="number" placeholder="Custom" />
+        </div>
+
+        <div class="bottom__section">
+          <label for="Npeople">Number of People</label><br />
+          <input type="number" id="Npeople" placeholder="0" />
+        </div>
+      </section>
+      <section class="right">
+        <div class="upper__section">
+          <h3>Tip Amount</h3>
+          <br />
+          <p>/ person</p>
+          <h3>Total</h3>
+          <h1 class="result tip-amount">
+            <span><img src="./images/icon-dollar.svg" alt="dollar sign" /></span
+            >0.00
+          </h1>
+          <br />
+          <p>/ person</p>
+          <h1 class="result total-amount">
+            <span><img src="./images/icon-dollar.svg" alt="dollar sign" /></span
+            >0.00
+          </h1>
+        </div>
+        <div class="lower__section">
+          <button class="btn">RESET</button>
+        </div>
+      </section>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
