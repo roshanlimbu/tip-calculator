@@ -22,4 +22,26 @@ $viewPort: (
   align-items: center;
 }
 @mixin tipBtn {
+  background-color: $DarkCyan600;
+  color: $White100;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: weight(bold);
+  border-radius: 4px;
+  padding: 0.7rem 2.1rem;
+  cursor: pointer;
+}
+@mixin custom-bnt {
+  background-color: $LightCyan200;
+  color: $DarkCyan500;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: weight(bold);
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  height: inherit;
+  cursor: pointer;
 }

@@ -20,7 +20,7 @@ body {
 
 body .main__container {
   background-color: white;
-  height: 50vh;
+  height: 65vh;
   width: 50%;
   position: relative;
   -webkit-transform: translateY(-50%);
@@ -55,6 +55,8 @@ body .main__container .left .bottom__section label {
   color: #00494d;
   font-weight: 700;
   font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.3rem;
 }
 
 body .main__container .left .top__section input,
@@ -69,12 +71,23 @@ body .main__container .left .bottom__section input {
   border-radius: 5px;
 }
 
-body .main__container .left .top__section {
+body .main__container .left .top__section,
+body .main__container .left .bottom__section {
   width: 100%;
 }
 
-body .main__container .left .top__section input {
+body .main__container .left .top__section input,
+body .main__container .left .bottom__section input {
   width: inherit;
+  text-align: end;
+  padding: 0 0.5rem;
+}
+
+body .main__container .left .top__section .input-img,
+body .main__container .left .bottom__section .input-img {
+  position: relative;
+  top: -26px;
+  left: 0.5rem;
 }
 
 body .main__container .left .middle__section {
@@ -98,6 +111,7 @@ body .main__container .left .middle__section .tip-btn {
   font-weight: 700;
   border-radius: 4px;
   padding: 0.7rem 2.1rem;
+  cursor: pointer;
 }
 
 body .main__container .left .middle__section .custom-btn {
@@ -110,7 +124,8 @@ body .main__container .left .middle__section .custom-btn {
   border-radius: 4px;
   width: 100%;
   text-align: center;
-  padding: 0.7rem 2.1rem;
+  height: inherit;
+  cursor: pointer;
 }
 
 input::-webkit-outer-spin-button,

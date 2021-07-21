@@ -12,7 +12,7 @@ body {
 
   .main__container {
     background-color: $White100;
-    height: 50vh;
+    height: 65vh;
     width: 50%;
     position: relative;
     transform: translateY(-50%);
@@ -22,6 +22,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
+    // LEFT SIDE
 
     & .left {
       background-color: $White100;
@@ -35,6 +37,8 @@ body {
           color: $DarkCyan600;
           font-weight: weight(bold);
           font-size: 0.8rem;
+          display: inline-block;
+          margin-bottom: 0.3rem;
         }
         & input {
           background-color: $LightCyan200;
@@ -46,12 +50,24 @@ body {
           border-radius: 5px;
         }
       }
-      & .top__section {
+
+      // LEFT SIDE TOP SECTION
+
+      & .top__section,
+      .bottom__section {
         width: 100%;
-        input {
+        & input {
           width: inherit;
+          text-align: end;
+          padding: 0 0.5rem;
+        }
+        .input-img {
+          position: relative;
+          top: -26px;
+          left: 0.5rem;
         }
       }
+      // LEFT SIDE MIDDLE SECTION
 
       & .middle__section {
         width: inherit;
@@ -61,28 +77,14 @@ body {
           grid-gap: 0.8rem;
         }
         & .tip-btn {
-          background-color: $DarkCyan600;
-          color: $White100;
-          outline: none;
-          border: none;
-          font-size: 1rem;
-          font-weight: weight(bold);
-          border-radius: 4px;
-          padding: 0.7rem 2.1rem;
+          @include tipBtn;
         }
         & .custom-btn {
-          background-color: $LightCyan200;
-          color: $DarkCyan500;
-          outline: none;
-          border: none;
-          font-size: 1rem;
-          font-weight: weight(bold);
-          border-radius: 4px;
-          width: 100%;
-          text-align: center;
-          padding: 0.7rem 2.1rem;
+          @include custom-bnt;
         }
       }
+
+      // LEFT SIDE BOTTOM SECTION
     }
   }
 }
