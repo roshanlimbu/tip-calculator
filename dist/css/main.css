@@ -80,14 +80,24 @@ body .main__container .left .top__section input,
 body .main__container .left .bottom__section input {
   width: inherit;
   text-align: end;
-  padding: 0 0.5rem;
+  padding: 1rem 0.5rem;
+  color: #00494d;
+  font-weight: 700;
+  border: 2px solid transparent;
+  font-family: "Space Mono", monospace;
+}
+
+body .main__container .left .top__section input:active, body .main__container .left .top__section input:hover,
+body .main__container .left .bottom__section input:active,
+body .main__container .left .bottom__section input:hover {
+  border: 2px solid #26c0ab;
 }
 
 body .main__container .left .top__section .input-img,
 body .main__container .left .bottom__section .input-img {
   position: relative;
-  top: -26px;
-  left: 0.5rem;
+  top: -27px;
+  left: 0.8rem;
 }
 
 body .main__container .left .middle__section {
@@ -126,6 +136,14 @@ body .main__container .left .middle__section .custom-btn {
   text-align: center;
   height: inherit;
   cursor: pointer;
+}
+
+body .main__container .right {
+  margin: 0 1rem;
+  background-color: #00494d;
+  padding: 15%;
+  border-radius: 4px;
+  color: #26c0ab;
 }
 
 input::-webkit-outer-spin-button,

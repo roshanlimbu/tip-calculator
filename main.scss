@@ -23,7 +23,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 
-    // LEFT SIDE
+    // --------------- LEFT SIDE---------------
 
     & .left {
       background-color: $White100;
@@ -51,23 +51,32 @@ body {
         }
       }
 
-      // LEFT SIDE TOP SECTION
+      // -------------------- LEFT SIDE TOP SECTION--------------------
 
       & .top__section,
       .bottom__section {
         width: 100%;
         & input {
+          // position: relative;
           width: inherit;
           text-align: end;
-          padding: 0 0.5rem;
+          padding: 1rem 0.5rem;
+          color: $DarkCyan600;
+          font-weight: weight(bold);
+          border: 2px solid transparent;
+          font-family: $main-font;
+          &:active,
+          &:hover {
+            border: 2px solid $primaryCyan;
+          }
         }
         .input-img {
           position: relative;
-          top: -26px;
-          left: 0.5rem;
+          top: -27px;
+          left: 0.8rem;
         }
       }
-      // LEFT SIDE MIDDLE SECTION
+      // -----------------LEFT SIDE MIDDLE SECTION--------------------------
 
       & .middle__section {
         width: inherit;
@@ -84,7 +93,14 @@ body {
         }
       }
 
-      // LEFT SIDE BOTTOM SECTION
+      //------------ LEFT SIDE BOTTOM SECTION-----------------
+    }
+    .right {
+      margin: 0 1rem;
+      background-color: $DarkCyan600;
+      padding: 15%;
+      border-radius: 4px;
+      color: $primaryCyan;
     }
   }
 }
