@@ -7,8 +7,110 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: grey;
+  background-color: #c5e4e7;
+  width: 100%;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+
+body .main__container {
+  background-color: white;
+  height: 50vh;
+  width: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main__container .left {
+  background-color: white;
+  margin: 0 1rem;
+}
+
+body .main__container .left .top__section,
+body .main__container .left .middle__section,
+body .main__container .left .bottom__section {
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+body .main__container .left .top__section label,
+body .main__container .left .middle__section label,
+body .main__container .left .bottom__section label {
+  color: #00494d;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+body .main__container .left .top__section input,
+body .main__container .left .middle__section input,
+body .main__container .left .bottom__section input {
+  background-color: #f4fafa;
+  border: none;
+  outline: none;
+  height: 2rem;
+  width: 70%;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+body .main__container .left .top__section {
+  width: 100%;
+}
+
+body .main__container .left .top__section input {
+  width: inherit;
+}
+
+body .main__container .left .middle__section {
+  width: inherit;
+}
+
+body .main__container .left .middle__section .btn__section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+}
+
+body .main__container .left .middle__section .tip-btn {
+  background-color: #00494d;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.7rem 2.1rem;
+}
+
+body .main__container .left .middle__section .custom-btn {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  padding: 0.7rem 2.1rem;
 }
 
 input::-webkit-outer-spin-button,

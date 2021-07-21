@@ -1,9 +1,90 @@
 @import './resets';
 @import './colors';
 @import './fontMixins';
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: grey;
+  background-color: $LightCyan300;
+  width: 100%;
+  height: 100vh;
+  font-family: $main-font;
+
+  .main__container {
+    background-color: $White100;
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    & .left {
+      background-color: $White100;
+      margin: 0 1rem;
+      & .top__section,
+      .middle__section,
+      .bottom__section {
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        & label {
+          color: $DarkCyan600;
+          font-weight: weight(bold);
+          font-size: 0.8rem;
+        }
+        & input {
+          background-color: $LightCyan200;
+          border: none;
+          outline: none;
+          height: 2rem;
+          width: 70%;
+          font-size: 1.4rem;
+          border-radius: 5px;
+        }
+      }
+      & .top__section {
+        width: 100%;
+        input {
+          width: inherit;
+        }
+      }
+
+      & .middle__section {
+        width: inherit;
+        & .btn__section {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 0.8rem;
+        }
+        & .tip-btn {
+          background-color: $DarkCyan600;
+          color: $White100;
+          outline: none;
+          border: none;
+          font-size: 1rem;
+          font-weight: weight(bold);
+          border-radius: 4px;
+          padding: 0.7rem 2.1rem;
+        }
+        & .custom-btn {
+          background-color: $LightCyan200;
+          color: $DarkCyan500;
+          outline: none;
+          border: none;
+          font-size: 1rem;
+          font-weight: weight(bold);
+          border-radius: 4px;
+          width: 100%;
+          text-align: center;
+          padding: 0.7rem 2.1rem;
+        }
+      }
+    }
+  }
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
